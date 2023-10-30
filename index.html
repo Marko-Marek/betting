@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function loadTestPage() {
+     console.log("start load test page");
+     var videoObject = document.getElementById("video");
+     console.log("test page "+videoObject);
+     videoObject.bindToCurrentChannel();
+     console.log("test page bind to current channel is finished");
+}
+
+</script>
+</head>
+<body onload="loadTestPage()">
+
+<object id="video"  type="video/broadcast" width="1280" height="720"></object>
+ 
+</body>
+</html>
